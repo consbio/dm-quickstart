@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Page Title</title>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="deps/leaflet.css" />
+    <link rel="stylesheet" href="deps/dc.css" />
+    <link rel="stylesheet" href="deps/L.Control.Geonames.css" />
+    <link rel="stylesheet" href="deps/L.Control.ZoomBox.css" />
+    <link rel="stylesheet" href="deps/nv.d3.min.css" />
+    <link rel="stylesheet" href="static/main.css" />
+</head>
+<body>
+    <script src="deps/leaflet.js"></script>
+    <script src="deps/leaflet-omnivore.min.js"></script>
+    <script src="deps/L.Control.Geonames.js"></script>
+    <script src="deps/L.Control.ZoomBox.js"></script>
+    <script src="deps/d3.min.js"></script>
+    <script src="deps/crossfilter.min.js"></script>
+    <script src="deps/dc.min.js"></script>
+    <script src="deps/lodash.min.js"></script>
+    <script src="deps/nv.d3.min.js"></script>
+
+    <div id="Header">
+        <!--<div id="LearnMoreButton" class="right button small" style="margin: 3px 6px 0 0;">Learn More</div>-->
+        <!--<img src="static/img/logo.jpg" align="left" />-->
+        <h3 class="left">Title</h3>
+        <div class="clear"></div>
+    </div>
+
+    <div id="Sidebar">
+        <ul class="tabs small">
+            <li class="active" data-tab="Filter">Filter</li>
+            <!--<li data-tab="Details">Details</li>-->
+        </ul>
+        <div id="Filter" class="tab"></div>
+
+        <!--<div id="Details" class="tab hidden">-->
+            <!--<h2 id="NoUnitSelected" class="quiet">Please click on an feature</h2>-->
+            <!--<div class="hidden">-->
+                <!--<h3 id="UnitName"></h3>-->
+                <!--<div class="quiet small">-->
+                    <!--<div id="UnitArea" style="float:right;"></div>-->
+                    <!--<div id="UnitClassification"></div>-->
+                    <!--<div class="clear:both;"></div>-->
+                <!--</div>-->
+
+                <!--<section>-->
+                    <!--<h4>Species present:</h4>-->
+                    <!--<div id="UnitSpecies"></div>-->
+                <!--</section>-->
+
+                <!--<section>-->
+                    <!--<h4>Aquatic settings:</h4>-->
+                    <!--<div id="UnitAquatic"></div>-->
+                <!--</section>-->
+
+                <!--<section>-->
+                    <!--<h4>Biotic components:</h4>-->
+                    <!--<div id="UnitBiotic"></div>-->
+                <!--</section>-->
+            <!--</div>-->
+        <!--</div>-->
+    </div>
+    <div id="Map"></div>
+
+    <div id="Footer" class="small">
+        <ul>
+            <li class="small right">
+                Created by the
+                <a href="http://consbio.org" target="_blank">Conservation Biology Institute</a>
+                <img src="static/img/CBI_logo_sm.png" align="right" style="margin-left: 6px; height:20px;box-shadow:1px 1px 3px #000;"/>
+            </li>
+        </ul>
+    </div>
+
+    <script src="static/utils.js"></script>
+    <script src="static/charts.js"></script>
+    <script src="static/main.js"></script>
+</body>
+</html>

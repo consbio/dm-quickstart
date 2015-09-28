@@ -1,0 +1,269 @@
+html {
+    height: 100%;
+}
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Verdana, Geneva, sans-serif;
+    color: #333;
+}
+a {
+    text-decoration: none;
+    color: #3182bd;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+
+#Map {
+    position: absolute;
+    top:36px;
+    left:30%;
+    bottom:30px;
+    right:0;
+}
+#Header {
+    height:34px;
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    background: #587387;
+    background: linear-gradient(left, #587387 0%,#AEC0CE 100%);
+    background: -webkit-linear-gradient(left, #587387 0%,#AEC0CE 100%);
+    color: white;
+    border-bottom: 2px solid #202C45;
+}
+#Header img {
+    margin: 2px 10px 2px 4px;
+    height: 30px;
+}
+#Header h3 {
+    margin:4px 6px;
+    text-shadow: 1px 1px 2px #333;
+}
+#Footer {
+    height:28px;
+    position:absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: white;
+    background: #587387;
+    border-top: 2px solid #202C45;
+}
+
+#Footer > ul {
+    list-style: none;
+    margin: 4px 4px 0;
+    padding: 0;
+}
+#Footer > ul > li {
+    display: inline-block;
+    padding-left: 16px;
+}
+#Footer > ul > li:first-child {
+    padding-left: 8px;
+}
+#Footer a {
+    color: white !important;
+}
+
+
+#Sidebar {
+    position: absolute;
+    top: 36px;
+    left: 0;
+    right: 70%;
+    bottom:30px;
+    border-right: 2px solid #333;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+#Sidebar > div {
+    padding-top: 10px;
+}
+
+#Filter > div {
+    padding: 6px;
+}
+#Filter > div + div {
+    margin-top: 6px;
+}
+#Filter .dc-chart g.row text {
+    fill: black;
+    font-size: 14px;
+}
+#Filter svg {
+    clear: both;
+}
+
+#Details {
+    padding: 10px;
+}
+#Details h3 {
+    margin: 10px 0 0 0;
+    border-bottom: 1px solid #AAA;
+}
+#Details section {
+    margin-top: 16px;
+    padding-top: 10px;
+}
+#Details section + section {
+    margin-top: 10px;
+}
+#Details h4,
+#Filter h4{
+    margin: 0 0 4px 0;
+    background: #3182bd;
+    color: white;
+    padding: 2px 4px;
+    border-radius: 3px;
+}
+#Details section div.small {
+    font-size: 0.8em;
+    padding: 4px 10px;
+}
+
+#NoUnitSelected {
+    color: #AAA;
+    margin-left: 14px;
+}
+
+
+.center {
+    text-align: center;
+}
+
+.small {
+    font-size: smaller;
+}
+
+.quiet {
+    color: #666;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.nomargin {
+    margin: 0;
+}
+
+.clear {
+    clear: both;
+}
+
+.right {
+    float: right;
+}
+
+.left {
+    float: left;
+}
+
+.textRight {
+    text-align: right;
+}
+
+.button {
+    color: #888;
+    background: #F6F6F6;
+    border: 1px solid #AAA;
+    padding: 4px 6px;
+    cursor: pointer;
+    border-radius: 6px;
+}
+.button:hover {
+    color: #333;
+    border-color: #888;
+    box-shadow: 1px 1px 3px #666;
+}
+
+
+.inlineTop {
+    display: inline-block !important;
+    vertical-align: top;
+}
+.inlineMiddle {
+    display: inline-block !important;
+    vertical-align: middle;
+}
+
+.reset {
+    float: right;
+    color: #1f77b4;
+    cursor: pointer;
+}
+.reset:hover {
+    text-decoration: underline;
+}
+
+.tabs {
+    list-style: none;
+    margin: 0;
+    padding: 4px 10px 0;
+    background-color: #AAA;
+    color: white;
+}
+
+.tabs > li {
+    display: inline-block;
+    padding: 4px 10px;
+    cursor: pointer;
+    border-radius: 3px 3px 0 0;
+}
+
+.tabs > li:hover {
+    background-color: #BBB;
+}
+
+.tabs > li.active {
+    font-weight: bold;
+    background: #FFF;
+    color: #333;
+}
+
+
+path.leaflet-interactive {
+    stroke: #051771;
+    stroke-width: 2px;
+    stroke-opacity: 0.5;
+}
+
+path.leaflet-interactive:hover {
+    fill: #000;
+    fill-opacity: 0.1;
+}
+path.leaflet-interactive.selected {
+    stroke: #e6550d;
+    fill: #000;
+    fill-opacity: 0.25;
+}
+
+/* dc.js overrides */
+div.dc-chart {
+    float: none;
+}
+
+/* leaflet overrides */
+.leaflet-control-layers-toggle {
+    background-image: none;
+    width: auto;
+    height: auto;
+    padding:4px;
+    text-decoration: none;
+    font-size: 1.3em;
+}
+
+/* hide for now */
+.leaflet-container .leaflet-control-attribution {
+    display: none;
+}
